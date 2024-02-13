@@ -5,6 +5,13 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-window.addEventListener('scroll', () => {
+function scrollToSection(id) {
+  var targetSection = document.getElementById(id);
+  var targetPosition = targetSection.offsetTop - 120;
 
-})
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+}
+

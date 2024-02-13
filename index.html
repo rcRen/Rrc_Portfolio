@@ -12,14 +12,14 @@
       <div class="logo">Rucheng Ren</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a onclick="scrollToSection('profile')">Profile</a></li>
+          <li><a onclick="scrollToSection('skills')">Skills</a></li>
+          <li><a onclick="scrollToSection('projects')">Projects</a></li>
+          <li><a onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <!-- <nav id="hamburger-nav">
+    <nav id="hamburger-nav">
       <div class="logo">Rucheng Ren</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -28,19 +28,17 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </nav> -->
+    </nav>
     <section id="profile">
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Rucheng Ren <span>|</span></h1>
-
-        <p class="section__text__p2">Junior Full Stack Developer</p>
+        <p class="section__text__p2">Full Stack Developer</p>
         <div id="socials-container">
           <img
             src="./assets/icons/linkedin.png"
@@ -59,9 +57,9 @@
         </div>
         <div class="text-container">
           <p>
-            I'm a Highly motivated Junior Web Developer with experience in
-            building and maintaining web applications. Proficient in HTML, CSS,
-            JavaScript, React and Nodejs. 🚀 <br />
+            I'm a Highly motivated Web Developer with experience in building and
+            maintaining web applications. Proficient in HTML, CSS, JavaScript,
+            React and Nodejs. 🚀 <br />
             I'm a lifelong learner 🎓 Seeking to join a dynamic team where I can
             utilize my skills to help drive the success of the organization.
           </p>
@@ -83,7 +81,7 @@
         src="./assets/icons/arrow-down.png"
         alt="down Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#skill'"
+        onclick="scrollToSection('skills')"
       />
     </section>
     <section id="skills">
@@ -175,7 +173,7 @@
         src="./assets/icons/arrow-down.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#project'"
+        onclick="scrollToSection('projects')"
       />
     </section>
     <section id="projects">
@@ -269,7 +267,7 @@
         src="./assets/icons/arrow-down.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="scrollToSection('contact')"
       />
     </section>
 
@@ -304,16 +302,16 @@
         src="./assets/icons/arrow-up.png"
         alt="Up Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#profile'"
+        onclick="scrollToSection('profile')"
       />
     </section>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
