@@ -6,7 +6,7 @@ role: Full Stack Developer
 email: rrcjadework@gmail.com
 github: https://github.com/rcRen/grocery-next-project
 url: https://grocery-next-project.vercel.app/
-featurePic: ../images/grocery-project.png
+featurePic: /images/grocery-project.png
 slogan: Buy the fresh fruit, and all you can get here, it's only fruit.
 techStack: ["nextjs", "react", "mongodb", "stripe", "CI/CD", "github action"]
 ---
