@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `My Portfolio`,
     description: "This is my portfolio website",
-    siteUrl: `https://rcren.github.io/Rrc_Porfolio/`
+    pathPrefix: "/Rrc_Porfolio"
   },
   plugins: [
     `gatsby-plugin-netlify`,
