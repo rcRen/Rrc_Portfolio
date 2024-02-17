@@ -17,7 +17,7 @@ jobs:
           git config --global user.email "rrcjadework@gmail.com"
           git config --global user.name "rcRen"
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Install dependencies
         run: |
           npm install

@@ -2,10 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/Rrc_Porfolio",
   siteMetadata: {
     title: `My Portfolio`,
     description: "This is my portfolio website",
-    pathPrefix: "/Rrc_Porfolio"
   },
   plugins: [
     "gatsby-plugin-postcss",

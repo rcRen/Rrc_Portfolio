@@ -45,7 +45,7 @@ export default function Profile() {
                 >
                     Review Resume
                 </button>
-                <button className="border-2 border-orange-800 bg-orange-800 p-3 font-semibold text-white hover:text-orange-800 hover:border-orange-800 hover:bg-white" onclick="">
+                <button className="border-2 border-orange-800 bg-orange-800 p-3 font-semibold text-white hover:text-orange-800 hover:border-orange-800 hover:bg-white" onClick={() => (window.location.replace("/#contact"))} >
                     Contact Info
                 </button>
             </div>

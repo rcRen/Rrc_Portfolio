@@ -5,63 +5,63 @@ export default function Skills() {
     const skills = [
         {
             name: "HTML",
-            icon: "/icons/tech-icon/html.svg"
+            icon: "./icons/tech-icon/html.svg"
         },
         {
             name: "CSS",
-            icon: "/icons/tech-icon/css.svg"
+            icon: "./icons/tech-icon/css.svg"
         },
         {
             name: "Tailwind",
-            icon: "/icons/tech-icon/tailwind.svg"
+            icon: "./icons/tech-icon/tailwind.svg"
         },
         {
             name: "JavaScript",
-            icon: "/icons/tech-icon/js.svg"
+            icon: "./icons/tech-icon/js.svg"
         },
         {
             name: "TypeScript",
-            icon: "/icons/tech-icon/ts.svg"
+            icon: "./icons/tech-icon/ts.svg"
         },
         {
             name: "React",
-            icon: "/icons/tech-icon/react.svg"
+            icon: "./icons/tech-icon/react.svg"
         },
         {
             name: "Redux",
-            icon: "/icons/tech-icon/redux.svg"
+            icon: "./icons/tech-icon/redux.svg"
         },
         {
             name: "MongoDB",
-            icon: "/icons/tech-icon/mongodb.svg"
+            icon: "./icons/tech-icon/mongodb.svg"
         },
         {
             name: "NodeJS",
-            icon: "/icons/tech-icon/nodejs.svg"
+            icon: "./icons/tech-icon/nodejs.svg"
         },
         {
             name: "Express",
-            icon: "/icons/tech-icon/expressjs.svg"
+            icon: "./icons/tech-icon/expressjs.svg"
         },
         {
             name: "Git",
-            icon: "/icons/tech-icon/git.svg"
+            icon: "./icons/tech-icon/git.svg"
         },
         {
             name: "GitHub Action",
-            icon: "/icons/tech-icon/github.svg"
+            icon: "./icons/tech-icon/github.svg"
         },
         {
             name: "SocketIO",
-            icon: "/icons/tech-icon/socketio.svg"
+            icon: "./icons/tech-icon/socketio.svg"
         },
         {
             name: "AWS EC2/S3",
-            icon: "/icons/tech-icon/aws.svg"
+            icon: "./icons/tech-icon/aws.svg"
         },
         {
             name: "RESTful API",
-            icon: "/icons/tech-icon/restapi.svg"
+            icon: "./icons/tech-icon/restapi.svg"
         },
 
     ]

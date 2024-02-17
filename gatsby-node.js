@@ -13,7 +13,6 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-    console.log(data)
     const projectTemplate = path.resolve(`src/templates/project.js`)
     data.allMarkdownRemark.nodes.forEach(node => {
         createPage({
