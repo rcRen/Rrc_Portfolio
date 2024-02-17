@@ -7,7 +7,6 @@ module.exports = {
     description: "This is my portfolio website",
   },
   plugins: [
-    `gatsby-plugin-netlify`,
     "gatsby-plugin-postcss",
     {
       resolve: 'gatsby-plugin-manifest',
