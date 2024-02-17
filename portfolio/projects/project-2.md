@@ -8,7 +8,7 @@ github: https://github.com/rcRen/myzone-chat-mern
 url: http://ec2-52-6-236-236.compute-1.amazonaws.com/
 featurePic: ./images/chat-project.png
 slogan: Chat with your friends.
-techStack: ["nextjs", "react", "mongodb", "stripe", "CI/CD", "github action"]
+techStack: ["react", "redux", "socket.io", "tailwind", "mongodb", "AWS EC2"]
 ---
 
 MyZone Chat is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.

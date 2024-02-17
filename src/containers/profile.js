@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link, navigate } from 'gatsby';
 
 export default function Profile() {
     const { markdownRemark } = useStaticQuery(graphql`
@@ -33,8 +33,8 @@ export default function Profile() {
                 <h1 className='text-2xl font-semibold text-gray-500'>{role}</h1 >
             </div>
             <div className='flex space-x-3 items-center'>
-                <a href={linkedIn} target='_blank'><img className="w-6 h-6" src="./icons/linkedin.png" /></a>
-                <a href={github} target='_blank'><img className="w-7 h-7" src='./icons/github.svg' /></a>
+                <Link to={linkedIn} target='_blank'><img className="w-6 h-6" src="./icons/linkedin.png" /></Link>
+                <Link to={github} target='_blank'><img className="w-7 h-7" src='./icons/github.svg' /></Link>
                 <p>{email}</p>
             </div>
             <div className="w-1/2" dangerouslySetInnerHTML={{ __html: description }} />
@@ -45,7 +45,7 @@ export default function Profile() {
                 >
                     Review Resume
                 </button>
-                <button className="border-2 border-orange-800 bg-orange-800 p-3 font-semibold text-white hover:text-orange-800 hover:border-orange-800 hover:bg-white" onClick={() => (window.location.replace("/#contact"))} >
+                <button onClick={() => (navigate("/#contact"))} className="border-2 border-orange-800 bg-orange-800 p-3 font-semibold text-white hover:text-orange-800 hover:border-orange-800 hover:bg-white">
                     Contact Info
                 </button>
             </div>

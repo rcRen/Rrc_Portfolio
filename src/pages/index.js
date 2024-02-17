@@ -6,7 +6,7 @@ const IndexPage = ({location}) => {
   return (
     <Layout location={location}>
       <main>
-        <div className="w-full h-screen mix-blend-multiply animate-bg-moving" style={{ backgroundImage: `url(../images/bg-pic.jpeg)` }}>
+        <div className="w-full h-screen mix-blend-multiply animate-bg-moving" style={{ backgroundImage: `url(./images/bg-pic.jpeg)` }}>
           <Profile />
         </div>
         <Skills />

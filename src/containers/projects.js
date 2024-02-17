@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby';
+import { Link, graphql, navigate, useStaticQuery } from 'gatsby';
 
 export default function Projects() {
     const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ export default function Projects() {
                                 src={project.frontmatter.featurePic}
                                 alt={project.frontmatter.name}
                                 className="rounded-xl w-[500px] h-[300px] cursor-pointer"
-                                onClick={() => (window.location.replace(`/project/${project.frontmatter.slug}`))}
+                                onClick={() => (navigate(`/project/${project.frontmatter.slug}`))}
                             />
                         </div>
                         <div className='ml-6 space-y-5'>
@@ -49,9 +49,9 @@ export default function Projects() {
                                     <span key={index} className="bg-black p-2 text-white">{tech}</span>
                                 ))}
                             </div>
-                            <a href={`/project/${project.frontmatter.slug}`} className='pt-12 flex justify-start items-center animate-bounce underline text-orange-800 text-xl font-bold cursor-pointer'>
+                            <Link to={`/project/${project.frontmatter.slug}`} className='pt-12 flex justify-start items-center animate-bounce underline text-orange-800 text-xl font-bold cursor-pointer'>
                                 Learn More
-                            </a>
+                            </Link>
                         </div>
 
                     </div>

@@ -1,3 +1,4 @@
+import { navigate } from "gatsby";
 import React from "react"
 
 const sections = [
@@ -33,14 +34,13 @@ export default function Header(props) {
             }
         }
         else {
-
-            window.location.replace(`/#${sectionId}`)
+            navigate(`/#${sectionId}`)
         }
 
     }
     return (
         <nav id="nav" className="fixed top-0 z-50  w-full p-5 h-[17vh] flex items-center justify-around bg-black">
-            <div className="text-orange-600 text-4xl font-normal" onClick={() => window.location.replace('/')}>Rucheng Ren</div>
+            <div className="text-orange-600 text-4xl font-normal cursor-pointer" onClick={() => navigate('/')}>Rucheng Ren</div>
             <div>
                 <ul className="flex text-white text-2xl font-normal space-x-5 ">
                     {sections.map((section, index) => (
