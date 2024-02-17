@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": `./icons/coding.gif`
+        "icon": `${__dirname}/static/icons/coding.gif`
       }
     },
     {
