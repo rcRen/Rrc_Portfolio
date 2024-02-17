@@ -14,7 +14,7 @@ export default function Project({ data, location }) {
                 </div>
                 <div className='flex flex-row space-x-3'>
                     <a className="font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-1 after:bg-orange-800 after:w-full after:scale-x-0 hover:text-orange-800 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href={github}><img className='w-6 h-6 inline align-middle' src={`${__PATH_PREFIX__}/icons/github.svg`} />GITHUB REPO</a>
-                    <a className="font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-1 after:bg-orange-800 after:w-full after:scale-x-0 hover:text-orange-800 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href={url}><img className='w-6 h-6 inline align-middle' src='/icons/link.svg' />LIVE DEMO</a></div>
+                    <a className="font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-1 after:bg-orange-800 after:w-full after:scale-x-0 hover:text-orange-800 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href={url}><img className='w-6 h-6 inline align-middle' src={`${__PATH_PREFIX__}/icons/link.svg`} />LIVE DEMO</a></div>
                 <div className="flex space-x-3">
                     {techStack.map((tech, index) => (
                         <span key={index} className="bg-black p-2 text-white">{tech}</span>

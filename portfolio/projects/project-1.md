@@ -29,20 +29,20 @@ OnlyFruit app is a simple e-commerce application that uses Next.js, React, Tailw
 # Featured
 
 **Home**
-<img src="/images/onlyfruit_home.png" width="700">
+<img src=`${__PATH_PREFIX__}/images/onlyfruit_home.png` width="700">
 <br><br><br>
 
 **Shop**
-<img src="/images/onlyfruit_shop.png" width="700">
+<img src=`${__PATH_PREFIX__}/images/onlyfruit_shop.png` width="700">
 <br><br><br>
 
 **Side Cart**
-<img src="/images/onlyfruit_sidecart.png" width="700">
+<img src=`${__PATH_PREFIX__}/images/onlyfruit_sidecart.png` width="700">
 <br><br><br>
 
 **Cart**
-<img src="/images/onlyfruit_cart.png" width="700">
+<img src=`${__PATH_PREFIX__}/images/onlyfruit_cart.png` width="700">
 <br><br><br>
 
 **SignIn && SignUp**
-<img src="/images/onlyfruit_login.png" width="700">
+<img src=`${__PATH_PREFIX__}/images/onlyfruit_login.png` width="700">
