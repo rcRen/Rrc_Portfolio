@@ -21,7 +21,7 @@ export default function Profile() {
     const { name, github, linkedIn, email, role, resume } = markdownRemark.frontmatter;
     const description = markdownRemark.html
     const handleOpenResume = () => {
-        window.open('../Rucheng-Resume.pdf', '_blank')
+        window.open('./Rucheng-Resume.pdf', '_blank')
     }
 
     return (
@@ -33,8 +33,8 @@ export default function Profile() {
                 <h1 className='text-2xl font-semibold text-gray-500'>{role}</h1 >
             </div>
             <div className='flex space-x-3 items-center'>
-                <a href={linkedIn} target='_blank'><img className="w-6 h-6" src="/icons/linkedin.png" /></a>
-                <a href={github} target='_blank'><img className="w-7 h-7" src='/icons/github.svg' /></a>
+                <a href={linkedIn} target='_blank'><img className="w-6 h-6" src="./icons/linkedin.png" /></a>
+                <a href={github} target='_blank'><img className="w-7 h-7" src='./icons/github.svg' /></a>
                 <p>{email}</p>
             </div>
             <div className="w-1/2" dangerouslySetInnerHTML={{ __html: description }} />

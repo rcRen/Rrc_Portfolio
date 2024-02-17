@@ -30,13 +30,13 @@ MyZone Chat is a Full Stack Chatting App. Uses Socket.io for real time communica
 
 ## Chat
 
-<img src="./images/chat-1.png" width="700">
+<img src="/images/chat-1.png" width="700">
 <br>
-<img src="./images/chat-2.png" width="700">
+<img src="/images/chat-2.png" width="700">
 <br><br><br>
 
 ## SignIn && SignUp
 
-<img src="./images/chat-login.png" width="700">
+<img src="/images/chat-login.png" width="700">
 <br>
-<img src="./images/chat-register.png" width="700">
+<img src="/images/chat-register.png" width="700">

@@ -9,7 +9,7 @@ export default function Skills() {
         },
         {
             name: "CSS",
-            icon: "../icons/tech-icon/css.svg"
+            icon: "/icons/tech-icon/css.svg"
         },
         {
             name: "Tailwind",
