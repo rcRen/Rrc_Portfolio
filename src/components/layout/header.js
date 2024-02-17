@@ -20,7 +20,6 @@ const sections = [
 export default function Header(props) {
     const currentSection = props.currentSection || 'projects';
     const { location } = props;
-    console.info(currentSection)
     const scrollToSection = (sectionId) => {
         if (location.pathname === "/") {
             const targetSection = document.getElementById(sectionId);
