@@ -9,6 +9,13 @@ url: http://ec2-52-6-236-236.compute-1.amazonaws.com/
 featurePic: ./images/chat-project.png
 slogan: Chat with your friends.
 techStack: ["react", "redux", "socket.io", "tailwind", "mongodb", "AWS EC2"]
+screenShots:
+  [
+    "/images/chat-1.png",
+    "/images/chat-2.png",
+    "/images/chat-login.png",
+    "/images/chat-register.png",
+  ]
 ---
 
 MyZone Chat is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
@@ -25,18 +32,3 @@ MyZone Chat is a Full Stack Chatting App. Uses Socket.io for real time communica
 
 - **Deployment**: AWS EC2
   <br><br>
-
-# Features
-
-## Chat
-
-<img src= "${__PATH_PREFIX__}/images/chat-1.png" width="700">
-<br>
-<img src="${__PATH_PREFIX__}/images/chat-2.png" width="700">
-<br><br><br>
-
-## SignIn && SignUp
-
-<img src="${__PATH_PREFIX__}/images/chat-login.png" width="700">
-<br>
-<img src="${__PATH_PREFIX__}/images/chat-register.png" width="700">

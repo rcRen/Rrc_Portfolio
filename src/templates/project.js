@@ -5,7 +5,7 @@ import { Layout } from '../components';
 export default function Project({ data, location }) {
     console.info(location)
     const { html } = data.markdownRemark;
-    const { name, slogan, techStack, github, url } = data.markdownRemark.frontmatter
+    const { name, slogan, techStack, github, url, screenShots } = data.markdownRemark.frontmatter
     return (
         <Layout location={location} className="bg-slate-100">
             <div className='my-24 py-24 mx-48 space-y-8'>
@@ -21,6 +21,14 @@ export default function Project({ data, location }) {
                     ))}
                 </div>
                 <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+                <div className='space-y-5'>
+                    <h1 className='text-3xl font-semibold border-b-4 border-double border-orange-800 inline'>Features</h1>
+                    <div className='space-y-5'>
+                        {screenShots.map((image, index) => (
+                            <img key={index} src={`${__PATH_PREFIX__}${image}`} width={700}/>
+                        ))}
+                    </div>
+                </div>
             </div>
         </Layout>
     )
@@ -38,6 +46,7 @@ query ProjectQuery ($slug:String!){
         email
         github
         url
+        screenShots
       }
     }
   }
