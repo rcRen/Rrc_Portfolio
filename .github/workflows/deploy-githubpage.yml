@@ -1,4 +1,3 @@
-
 name: Gatsby Deploy
 
 on:
@@ -18,8 +17,16 @@ jobs:
           git config --global user.name "rcRen"
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Create env file
+        run: |
+          if [ ! -f ".env" ]; then
+            touch .env
+            echo "REACT_APP_SANITY_PROJECT_ID=${{ secrets.REACT_APP_SANITY_PROJECT_ID}}" >> .env
+            echo "REACT_APP_SANITY_DATASET=${{ secrets.REACT_APP_SANITY_DATASET }}" >> .env
+            echo "REACT_APP_SANITY_APPLICATION_TOKEN=${{ secrets.REACT_APP_SANITY_APPLICATION_TOKEN }}" >> .env
+          fi
       - name: Install dependencies
         run: |
           npm install
       - name: Deploy
-        run: npm run deploy:ci
+        run: npm run deploy
