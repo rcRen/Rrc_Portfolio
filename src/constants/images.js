@@ -27,7 +27,8 @@ import mysql from '../assets/mysql.png';
 
 import amazon from '../assets/amazon.png';
 
-export default {
+
+const images = {
     email,
     mobile,
     api,
@@ -54,3 +55,5 @@ export default {
     java,
     mysql
 };
+
+export default images;
